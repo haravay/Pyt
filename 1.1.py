@@ -8,6 +8,16 @@ def Maxi(num):
     return max_digit
 
 
-number = int(input("Введите число: "))
+while True:
+    number = input("Введите число: ")
+    if not number.isdigit():
+        print("Некоректный ввод.")
+        continue
+    else:
+        break
+
+
+
+number = int(number)
 max_digit = Maxi(number)
 print("Максимальная цифра:", max_digit)
