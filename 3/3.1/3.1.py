@@ -18,7 +18,7 @@ with open('text2.txt', 'r', encoding='utf-8') as text2:
     lines = text2.readlines()
     if lines:
         lastLine = lines[-1]
-        lastWord = lastline.split()[-1]
+        lastWord = lastLine.split()[-1]
         ch = len(lastWord)
         print("Количество символов в последнем слове: ")
     else:
